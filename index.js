@@ -15,8 +15,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 // app.use("/otakudesu", otakudesu);
-// app.use("/animeindo", animeIndo);
-app.use("/luckyanime", kuramanime);
+app.use("/animeindo", animeIndo);
+// app.use("/luckyanime", kuramanime);
 
 app.get("/", (req, res) => {
   res.send("Welcome To Lucky Anime Rest API");
