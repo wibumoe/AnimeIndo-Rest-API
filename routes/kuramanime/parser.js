@@ -24,7 +24,7 @@ const getOngoingAnime = async (req, res) => {
             ? $(e)
                 .find("div > h5 > a")
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
           image: $(e).find("a > div").attr("data-setbg"),
           episode: $(e)
@@ -77,7 +77,7 @@ const getScheeduleAnime = async (req, res) => {
             ? $(e)
                 .find("div > h5 > a")
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
           image: $(e).find("a > div").attr("data-setbg"),
           days: $(e)
@@ -184,7 +184,7 @@ const getPropertiesGenre = async (req, res) => {
             ? $(e)
                 .find("div > h5 > a")
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
           ratings: $(e)
             .find(" a > div > div.ep > span")
@@ -416,7 +416,7 @@ const getSearchAnime = async (req, res) => {
             ? $(e)
                 .find("div > h5 > a")
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
           ratings: $(e)
             .find(" a > div > div.ep > span")
@@ -471,7 +471,7 @@ const getRecentRelease = async (req, res) => {
             ? $(e)
                 .find("div > h5 > a")
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
           ratings: $(e)
             .find(" a > div > div.ep > span")
@@ -532,7 +532,7 @@ const getAnimeEpisode = (req, res) => {
           episodeId: $(el).attr("href")
             ? $(el)
                 .attr("href")
-                .replace(/^https?:\/\/kuramanime\.net/i, "")
+                .replace(/^https?:\/\/kuramanime\.pro/i, "")
             : "",
         });
       });
