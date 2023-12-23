@@ -241,12 +241,6 @@ const getAnimeEpisode = (req, res) => {
     });
 };
 module.exports = {
-  getOngoingAnime,
-  getScheeduleAnime,
-  getPropertiesAnime,
-  getPropertiesGenre,
   getDetailsAnime,
-  getSearchAnime,
-  getRecentRelease,
   getAnimeEpisode,
 };
