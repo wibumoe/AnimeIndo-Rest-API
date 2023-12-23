@@ -9,7 +9,7 @@ const animeIndo = require("./routes/animeIndo/animeIndo");
 const kuramanime = require("./routes/kuramanime/kuramanime");
 
 const corsOptions = {
-  origin: "*", // Ganti dengan URL frontend Anda
+  origin: "https://anime-indo-rest-api-henna.vercel.app", // Ganti dengan URL frontend Anda
   credentials: true, // Mengizinkan pengiriman cookie melalui CORS
 };
 
